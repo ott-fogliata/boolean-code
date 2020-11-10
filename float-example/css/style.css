@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-l {
+  float:left;
+}
+
+.float-r {
+  float:right;
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+main > div:first-child {
+  background: blue;
+  width: 60%;
+  height: 400px;
+}
+
+main > div:nth-child(2) {
+  background: green;
+  width: 40%;
+  height: 800px;
+}

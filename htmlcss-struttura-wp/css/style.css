@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* utility class */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fl {
+  float: left;
+}
+
+/* end utility class */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+header {
+  height: 200px;
+  background: #ccc;
+  margin-bottom: 15px;
+}
+
+main {
+
+}
+
+.column-1 {
+  width: 25%;
+  height: 400px;
+  background: #ccc;
+}
+
+.column-2 {
+  width: calc(50% - 30px);
+  height: 600px;
+  background: #ccc;
+  margin: 0 15px;
+}
+
+.column-3 {
+  width: 25%;
+  background: #ccc;
+}
+
+.box {
+  background: green;
+  height: 200px;
+}
+
+.box:first-child {
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 15px;
+  height: 200px;
+  background: #ccc;
+  margin-bottom: 15px;
+}
