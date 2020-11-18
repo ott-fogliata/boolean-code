@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-size: 70px;
+}
 
 .clearfix::after {
   content: "";
@@ -26,7 +29,9 @@
     width: 50%;
 
 }
-
+h1{
+  text-align: center;
+}
 .show-desktop {
   display: block;
 }
@@ -51,5 +56,8 @@ div.gtr > img {
   }
   .show-mobile {
     display: block;
+  }
+  h1{
+    font-size: 0.5em;
   }
 }
