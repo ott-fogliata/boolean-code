@@ -1,0 +1,55 @@
+/* UTILITY */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.gtr {
+    width: 50%;
+
+}
+
+.show-desktop {
+  display: block;
+}
+
+.show-mobile {
+  display: none;
+}
+/* END UTILITY */
+
+div.gtr > img {
+  height: 300px;
+}
+
+/* media query sostituzioni img da desktop a mobile */
+
+@media screen and (max-width: 768px) {
+  .gtr{
+    width: 100%;
+  }
+  .show-desktop {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+}
