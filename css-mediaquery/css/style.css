@@ -5,7 +5,7 @@
   padding: 0;
 }
 body{
-  font-size: 70px;
+  font-size: 30px;
 }
 
 .clearfix::after {
@@ -26,8 +26,13 @@ body{
 }
 
 .gtr {
-    width: 50%;
-
+    width: calc(50% - 20px);
+    overflow: hidden;
+    border: 2px solid #ccc;
+    padding: 0 30px;
+}
+.container .gtr:nth-of-type(2) {
+    margin-left: 40px;
 }
 h1{
   text-align: center;
@@ -50,6 +55,10 @@ div.gtr > img {
 @media screen and (max-width: 768px) {
   .gtr{
     width: 100%;
+    padding: 0 15px;
+  }
+  .container .gtr:nth-of-type(2) {
+    margin: 0;
   }
   .show-desktop {
     display: none;
@@ -58,6 +67,6 @@ div.gtr > img {
     display: block;
   }
   h1{
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
 }
