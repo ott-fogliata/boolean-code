@@ -87,11 +87,13 @@ img {
     margin-top: 15px;
   }
 
+}
+
+@media screen and (min-width: 421px) and (max-width:768px) {
   #steps img {
     width: 300px;
     height: auto;
   }
-
 }
 
 @media screen and (max-width: 420px) {
@@ -119,7 +121,7 @@ img {
     margin-top: 15px;
   }
 
-  img, #steps img {
+  img {
     width: 150px;
     height: auto;
   }
