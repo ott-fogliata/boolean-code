@@ -127,7 +127,7 @@
 /* LG */
 
 /* MD */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .col-md-12 {
     width: 100%;
   }
@@ -179,7 +179,7 @@
 /* MD */
 
 /* XS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .col-xs-12 {
     width: 100%;
   }
@@ -283,7 +283,7 @@
 }
 
 /* MD */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .offset-md-12 {
     margin-left: 100%;
   }
@@ -334,7 +334,7 @@
 }
 
 /* XS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .offset-xs-12 {
     margin-left: 100%;
   }
