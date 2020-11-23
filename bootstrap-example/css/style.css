@@ -1,0 +1,16 @@
+.bg-color {
+  background: #ccc;
+}
+
+[class*="col-"] {
+  border: 1px solid black;
+  background: pink;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+
+.example-on-visibility {
+  margin-top: 50px;
+}
