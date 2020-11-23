@@ -5,12 +5,20 @@
 [class*="col-"] {
   border: 1px solid black;
   background: pink;
-  height: 300px;
-  text-align: center;
-  line-height: 300px;
+  min-height: 300px;
+  text-align: left;
 }
 
 
 .example-on-visibility {
   margin-top: 50px;
+}
+
+.sidebar [class*="col-"] {
+  height: 100vh;
+}
+
+.jumbotron-freelancer {
+  text-align: center;
+  background: #1abc9c;
 }
