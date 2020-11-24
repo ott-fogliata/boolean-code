@@ -22,3 +22,39 @@
   text-align: center;
   background: #1abc9c;
 }
+
+.star-separator {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.star-separator i {
+  line-height: 4px;
+  vertical-align: middle;
+}
+
+.star-separator::before,
+.star-separator::after {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.star-separator.star-white::before, .star-separator.star-white::after {
+  background-color: white;
+}
+
+.star-separator.star-white{
+  color:white;
+}
+
+.star-separator.star-dark::before, .star-separator.star-dark::after {
+  background-color: #2c3e50;
+}
+
+.star-separator.star-dark{
+  color:#2c3e50;
+}
