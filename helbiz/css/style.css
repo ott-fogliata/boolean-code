@@ -7,3 +7,22 @@
 .navbar li{
   display: inline-block;
 }
+
+.bg-man {
+  background: url("../img/index-banner.1f6fd0a.jpg");
+  height: 400px;
+  background-size: cover;
+}
+
+.frst-span, .scnd-span {
+  margin-top: 100px;
+}
+
+.phone img {
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+.phone {
+  padding: 0 40px;
+}
