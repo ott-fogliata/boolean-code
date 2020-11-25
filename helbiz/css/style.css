@@ -1,0 +1,9 @@
+.navbar{
+  height: 100px;
+}
+.logo{
+  height: 40px;
+}
+.navbar li{
+  display: inline-block;
+}
