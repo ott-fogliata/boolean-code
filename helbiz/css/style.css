@@ -26,3 +26,9 @@
 .phone {
   padding: 0 40px;
 }
+.bg-blue{
+  background: linear-gradient(#41566A,#252F38) 50% no-repeat;
+  color: #fff;
+  height: 300px;
+  overflow: hidden;
+}
