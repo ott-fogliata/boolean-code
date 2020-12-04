@@ -1,0 +1,13 @@
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.main2 {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
