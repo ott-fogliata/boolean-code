@@ -1,0 +1,23 @@
+.box-1{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.box-1:hover{
+  transition: background 2s;
+  background-color: red;
+}
+
+.box-2{
+  width: 100px;
+  height: 100px;
+  animation-name: bg-effect;
+  animation-duration: 2s;
+  background-color: blue;
+}
+
+@keyframes bg-effect{
+  from {background-color: blue}
+  to {background-color: red}
+}
