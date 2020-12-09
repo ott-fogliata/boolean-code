@@ -1,0 +1,71 @@
+@keyframes bit {
+  0%   {background-color:red; left:0px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.animation-1 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  animation-name: bit;
+  animation-duration:  2s;
+  position: absolute;
+}
+
+@keyframes bg {
+    100% {background: green}
+}
+
+.box-1 { /* mettiamo animazione */
+  border: 2px #333 solid;
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.box-1:hover {
+  animation-name: bg;
+  animation-duration: 4s;
+}
+
+.box-2 { /* stessa cosa ma con la transition */
+  border: 2px #333 solid;
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.box-2:hover {
+  background: green;
+  transition: background 4s;
+}
+
+@keyframes width-animation {
+    from {width: 200px}
+    to {width: 800px}
+}
+
+.flex-forever {
+  display: flex;
+}
+.box-3, .box-4 {
+  background: #ccc;
+  border: 2px #333 solid;
+  width: 200px;
+  height: 400px;
+}
+
+.box-3 {
+  position: absolute;
+}
+
+.box-4 {
+  margin-left: 200px;
+  background: #555;
+}
+
+.box-3:hover {
+  animation-name: width-animation;
+  animation-duration: 4s;
+}

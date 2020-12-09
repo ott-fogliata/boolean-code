@@ -1,0 +1,36 @@
+.transition-bg{
+  background: red;
+  width: 200px;
+  height: 200px;
+}
+
+.transition-bg:hover{
+  background: blue;
+  transition: all 5s;
+}
+
+.transition-width {
+  background: red;
+  width: 200px;
+  height: 200px;
+  transition: width 3s ease-in-out 2s;
+}
+
+.transition-width:hover{
+  width: 800px;
+}
+
+.btn{
+  width:200px;
+  height:100px;
+  background:#676470;
+  margin: 50px;
+}
+
+.btn:hover
+{
+  width:400px;
+  height:200px;
+  transform: rotate(180deg);
+  transition:width 1s ease-in-out, height 1s ease-in-out 2s, transform 5s cubic-bezier(0,1.58,1,-0.09) 5s;
+}
