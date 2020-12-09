@@ -43,5 +43,23 @@
   50% {top:calc(100vh - 200px); left:calc(100vw - 200px)}
   75% {top:calc(100vh - 200px); left:0}
   100% {top:0; left:0}
+}
 
+
+.colosseo {
+  filter: blur(40px);
+  transition: filter 3s;
+}
+
+.colosseo:hover {
+  filter: none;
+}
+
+.colosseo-2 {
+  filter: hue-rotate(90deg);
+}
+
+.colosseo-2:hover {
+  transition: filter 3s;
+  filter: none;
 }
