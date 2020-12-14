@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var d = new Date();
+      var minutiAttuali = d.getMinutes();
+
+      console.log('Minuti attuali ' + minutiAttuali);
+      console.log('Mancano ' + (60 - minutiAttuali) + ' minuti')
+
+      var ageFirst = prompt('Età prima persona');
+      var ageSecond = prompt('Età seconda persona');
+
+      if(isNaN(ageFirst) || isNaN(ageSecond)) {
+        alert('Il primo oppure il secondo valore sono errati. Riprova.')
+      } else {
+
+        // opzionale
+        ageFirst = parseInt(ageFirst)
+        ageSecond = parseInt(ageSecond)
+
+        if(ageFirst > ageSecond) {
+          console.log(ageFirst);
+        } else if(ageFirst < ageSecond) {
+          console.log(ageSecond);
+        } else {
+          console.log('Sono uguali!');
+        }
+
+
+      }
+
+
+    </script>
+  </body>
+</html>
