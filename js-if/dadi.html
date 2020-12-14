@@ -5,9 +5,13 @@
     <title></title>
   </head>
   <body>
-    <div id='dado'></div>
     <script type="text/javascript">
-    
+
+        var min = 1;
+        var max = 6;
+        var dado = Math.floor(Math.random() * (max + 1 - min) + min)
+        console.log(dado)
+        
     </script>
   </body>
 </html>
