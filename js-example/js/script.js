@@ -11,3 +11,14 @@ console.log('Il tizio ha: ' + age + ' anni');
 var annoCorrente = new Date().getFullYear();
 var annoDiNascita = annoCorrente - age;
 outputContainer.append('\nla tua data di nascita è ' + annoDiNascita);
+
+
+var cognome = prompt(' Ciao ' + nome + '. Quale è il tuo cognome?');
+console.log('Il suo cognome è: ' + cognome);
+var colorePref = prompt('Bene' + nome + cognome '. Quale è il tuo colore preferito?');
+console.log('Il suo colore preferito è: ' + colorePref);
+var eta = prompt('Perfetto' + nome ', ultima domanda. Quanti anni hai?');
+console.log('Ha:' + eta ' anni');
+var annoCorrente = new Date().getFullYear();
+var annoDiNascita = annoCorrente - age;
+outputContainer.append('\nla tua password è: ' + nome + cognome + colorePref + annoDiNascita);
