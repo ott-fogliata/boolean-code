@@ -10,6 +10,32 @@ for(var i = 0; i < emails.length && !mailTrovata; i++) {
   }
 }
 
+var i = 0;
+
+// // while
+// while(i < emails.length) {
+//   // do
+//   console.log('qualcosa');
+//   i++;
+// }
+
+// do, faccio
+// mentre
+// var i = 100;
+// do {
+//   console.log('ci sono');
+// } while (i < 10);
+
+// var i = 0;
+// while(i < emails.length && !mailTrovata) {
+//   console.log(emails[i])
+//   if(emails[i] === login) {
+//     mailTrovata = true;
+//   }
+//   i++;
+// }
+
+
 // mailTrovata o è true, o è false
 if(!mailTrovata) {
   output.append('\nAccesso negato.')
