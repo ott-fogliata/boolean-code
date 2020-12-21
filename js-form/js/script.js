@@ -1,5 +1,4 @@
 // var input_inserito = document.getElementsByTagName('input')[0].value;
-//
 // listaCheck = document.getElementsByClassName('checkboxes-container')[0].getElementsByTagName('input');
 
 var primoInput = document.getElementsByClassName('primo-testo')[0];
@@ -16,6 +15,7 @@ document.getElementById("button-submit").addEventListener("click", function() {
     if(checkboxes[i].checked === true) {
       counterCheckedElements += 1;
     }
+    // console.log(checkboxes[i].value);
   }
   testoMessaggio += ' Hai checkato ' + counterCheckedElements + ' elementi';
   alert(testoMessaggio);
