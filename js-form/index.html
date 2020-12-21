@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <!--
+      al click sul pulsante #button-submit, un alert mi dirà quali sono i valori
+      dei due input (i testi inseriti) e quante checkbox ho 'checkato'.
+
+      - evento click
+      - come prendere i "valori" dei due input
+      - come capire se una checkbox è stata attivata (enabled?)
+
+    -->
+
+    <label for="testo-1">Questo è il primo testo</label>
+    <input class="primo-testo" type="text" name="testo-1" value="">
+    <br />
+    <label for="testo-2">Questo è il secondo testo</label>
+    <input class="altro-testo" type="text" name="testo-2" value="">
+
+    <div class='checkboxes-container'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='1'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='2'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='3'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='4'>
+    </div>
+
+    <!-- <div class='ingredient-container'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='burger'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='salsa'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='pomodorini'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='formaggio'>
+    </div>
+
+    <button id='button-submit' type="button" name="button">Click here</button> -->
+
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
