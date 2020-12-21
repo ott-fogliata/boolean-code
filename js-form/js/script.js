@@ -20,3 +20,15 @@ document.getElementById("button-submit").addEventListener("click", function() {
   testoMessaggio += ' Hai checkato ' + counterCheckedElements + ' elementi';
   alert(testoMessaggio);
 });
+
+var testoIngredienti = 'Ciao! I tuoi ingredienti sono: ';
+
+var ingredients = document.getElementsByClassName('ingredient-container')[0].getElementsByTagName('input');
+document.getElementById("button-ingredient").addEventListener("click", function() {
+  for(var x = 0; x < ingredients.length; x++) {
+    if(ingredients[x].checked) {
+      testoIngredienti += ' ' + ingredients[x].value;
+    }
+  }
+  alert(testoIngredienti);
+})

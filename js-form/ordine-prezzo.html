@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class='ingredient-container'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='20'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='5'>
+      <input type="checkbox" class="ingredient-checkbox" name="list[]" value='6'>
+    </div>
+
+    <button id='button-ingredient' type="button" name="button">Discover ingredient</button>
+
+    <div id="total-div">Il totale è: <span></span></div>
+
+    <script type="text/javascript">
+      // preparo variabile con tutte le checkbox
+      var costs = document.getElementsByClassName('ingredient-container')[0].getElementsByTagName('input');
+
+      // preparo variabile totale del nostro ordine
+      var total = 0;
+
+      var totalHtmlElement = document.getElementById('total-div');
+
+      var array
+
+      // evento click su pulsante
+      document.getElementById("button-ingredient").addEventListener("click", function() {
+
+        total = 0;
+
+        for(var x = 0; x < costs.length; x++) {
+          if(costs[x].checked) {
+            total += parseInt(costs[x].value);
+          }
+        }
+
+        // popolo elemento #total con il totale del mio ordine
+        totalHtmlElement.getElementsByTagName('span')[0].innerText = total;
+
+      });
+
+    </script>
+  </body>
+</html>
