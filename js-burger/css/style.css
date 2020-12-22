@@ -1,0 +1,47 @@
+.ingredient {
+  height: 56px;
+  margin-bottom: 16px;
+  line-height: 56px;
+}
+
+.ingredient .checkbox {
+  display: inline-block;
+  width: 150px;
+  height: 56px;
+  vertical-align: middle;
+  line-height: 56px;
+}
+
+.ingredient .checkbox span {
+  position: relative;
+  padding-left: 30px;
+  color: #f9395e;
+}
+
+.ingredient .checkbox input[type=checkbox] {
+  visibility: hidden;
+}
+
+.ingredient .checkbox span:after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-60%);
+  width: 16px;
+  height: 16px;
+  background-color: #d33359;
+}
+
+.ingredient input[type=checkbox]:checked + span:before {
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  transform: translateY(-55%);
+  z-index: 1;
+  content: "x";
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
