@@ -12,9 +12,11 @@ var coupons = [
 
 var burgerNameElement = document.getElementById('burger-name');
 var containerIngredient = document.getElementsByClassName('ingredienti-container')[0];
-// alternativa: prendere tutti gli ingredienti con una classe
-// da assegnare a ciascun input-checkbox e ciclare l'html collection
+
 var ingredientsList = containerIngredient.getElementsByTagName('input');
+// per questo c'è un'alternativa: prendere tutti gli ingredienti con una classe
+// da assegnare a ciascun input-checkbox e ciclare l'html collection.
+
 var costElement = document.getElementById('cost');
 var couponElement = document.getElementById('coupon');
 
