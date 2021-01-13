@@ -18,6 +18,8 @@ $('#button-1').mouseleave(function() {
   $(this).removeClass('red');
 });
 
+
+
 $('#button-1').dblclick(function() {
   $(this).text('cliccato');
 })

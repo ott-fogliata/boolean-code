@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+header {
+    padding: 0 20px;
+    width: 100%;
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #efefef;
+}
+.header-left, .header-right {
+    float: left;
+    height: 100%;
+}
+.header-left {
+    width: 20%;
+}
+.header-right {
+    width: 80%;
+}
+.header-left img {
+    height: 40px;
+    margin-top: 15px;
+}
+.header-right > a {
+    display: none;
+}
+.header-right ul {
+    list-style: none;
+    height: 100%;
+    text-align: right;
+}
+.header-right ul li {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 70px;
+    height: 100%;
+}
+.header-right ul li a {
+    color: #565A5C;
+    text-decoration: none;
+}
+.header-right ul li a.cta {
+    padding: 10px 20px;
+    color: white;
+    background: #E78D5C;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #2B3F58;
+}
+.hamburger-menu ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+}
+.hamburger-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
+.close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px)
+{
+    .header-right ul {
+        display: none;
+    }
+    .header-right > a {
+        display: block;
+        height: 100%;
+        line-height: 70px;
+        float: right;
+        color: lightgrey;
+        font-size: 20px;
+    }
+
+    .hamburger-menu.active {
+        display: block;
+    }
+}
