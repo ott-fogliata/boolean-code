@@ -38,6 +38,24 @@ function prevImg() {
 $(document).ready(
   function(){
 
+    var countImgs = $('img').length;
+
+    for(var x = 0; x < countImgs; x++) {
+      var dotClass = 'fas fa-circle';
+
+      if(x === 0) {
+        dotClass += ' active first';
+      }
+
+      if(x === countImgs - 1) {
+        dotClass += ' last'
+      }
+
+      $('<i></i>', {
+        'class': dotClass
+      }).appendTo('.nav');
+    }
+
      //ridimenisionamento img
     $('.images > img').css('width', '1200px');
 
@@ -70,7 +88,7 @@ $(document).ready(
       $('img:nth-child(' + index + ')').addClass('active');
     })
 
-    
+
 
 
 
