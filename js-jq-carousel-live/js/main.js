@@ -60,5 +60,19 @@ $(document).ready(
       }
     });
 
+    $('.nav i').click(function() {
+      $('.nav i').removeClass('active');
+      $(this).addClass('active');
+      var index = $('.nav i').index(this) + 1;
+      $('img').removeClass('active');
+
+      //img:nth-child(2)
+      $('img:nth-child(' + index + ')').addClass('active');
+    })
+
+    
+
+
+
 
 })//end ready
