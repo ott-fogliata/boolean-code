@@ -52,15 +52,4 @@ $(document).ready(
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 })//end ready
