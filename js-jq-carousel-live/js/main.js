@@ -50,6 +50,15 @@ $(document).ready(
       prevImg();
     })
 
+    $(document).keydown(function(e){
+      if(e.which === 39) {
+        nextImg();
+      }
+
+      if(e.which === 37) {
+        prevImg();
+      }
+    });
 
 
 })//end ready
