@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <span id="seconds"></span>
+
+    <script>
+
+      var element = document.getElementById('seconds');
+      var secondsNum = 10;
+
+      element.innerText = secondsNum;
+
+      var countdown = setInterval(function() {
+        secondsNum--;
+        element.innerText = secondsNum
+        if(secondsNum === 0) {
+
+          setTimeout(function() {
+            alert('AUGURI DAVIDE');
+          }, 500);
+          
+          clearInterval(countdown)
+        }
+      }, 1000)
+
+      // setTimeout(function() {
+      //   alert('Buonanno!');
+      // }, 10000)
+
+    </script>
+  </body>
+</html>

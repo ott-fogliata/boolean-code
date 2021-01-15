@@ -17,7 +17,6 @@ start(urla)
 
 
 // funzione anonima
-
-start(function(
+start(function() {
   alert('ginoooooooo!')
-))
+})
