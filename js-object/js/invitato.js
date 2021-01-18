@@ -34,10 +34,13 @@ var scelta = prompt('Cosa vuoi sapere di Gian?')
 // var scelta = 'nome'
 if(typeof invitato[scelta] !== 'undefined') {
   alert(invitato[scelta]);
+
+  // NON SI PUO' SCRIVERE COSI':
+  // alert(invitato.scelta)
+
 } else {
   alert('Gian non ha questa proprietà');
 }
-
 
 
 // portiamo Gianpaolo nella casa (ma dopo 5s)
