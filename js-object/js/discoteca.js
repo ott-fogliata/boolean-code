@@ -21,7 +21,7 @@ while(discoteca.people.length < discoteca.capienza) {
   /*
   giovine = {
     'nome': 'pippo',
-    'cognome': 'baudo'
+    'cognome': 'baudo',
   }
   */
 
