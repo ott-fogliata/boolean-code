@@ -55,12 +55,12 @@ if(true) {
 console.log(filomena)
 
 //
-// let filomena = 3;
-// if(true) {
-//   let filomena = 'mimmo'
-//   console.log(filomena)
-// }
-// console.log(filomena)
+let filomena = 3;
+if(true) {
+  let filomena = 'mimmo'
+  console.log(filomena)
+}
+console.log(filomena)
 
 
 // function myFunction(args) {
