@@ -1,4 +1,4 @@
-#container, #container-by-gender {
+#container, #container-by-gender, #container-final-list {
   font-size: 26px;
 }
 
@@ -18,4 +18,16 @@
 .box-male {
   width: calc(50% - 1px);
   padding: 15px;
+}
+
+#container-filter {
+  margin: 20px 0;
+  padding: 20px;
+  border-top: 2px #333 solid;
+}
+
+.search {
+  padding: 20px;
+  background-color: lightblue;
+  font-size: 24px;
 }
