@@ -1,3 +1,4 @@
+const maxAge = 20;
 const cats = [
   {
     name: 'Bit',
@@ -37,3 +38,11 @@ cats.forEach((element) => {
   `
 
 })
+
+
+/*
+raggiungere questo numero per l'opacità
+0.8
+0.1
+0.5
+*/
