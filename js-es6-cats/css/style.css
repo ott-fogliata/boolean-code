@@ -1,3 +1,21 @@
-#container {
+#container, #container-by-gender {
   font-size: 26px;
+}
+
+
+#container-by-gender {
+  border: 1px #ccc solid;
+  margin: 20px 0;
+  display: flex;
+}
+
+.box-female {
+  width: calc(50% - 1px);
+  border-right: 2px #000 solid;
+  padding: 15px;
+}
+
+.box-male {
+  width: calc(50% - 1px);
+  padding: 15px;
 }

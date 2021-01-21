@@ -39,10 +39,67 @@ cats.forEach((element) => {
 
 })
 
+// MILESTONE 2 -----------------------------------------------------------------------
 
-/*
-raggiungere questo numero per l'opacità
-0.8
-0.1
-0.5
-*/
+const femaleCats = cats.filter((element) => {
+  return element.gender === 'female'
+})
+
+const maleCats = cats.filter((element) => {
+  return element.gender === 'male'
+})
+
+const boxFemale = document.getElementsByClassName('box-female')[0];
+const boxMale = document.getElementsByClassName('box-male')[0];
+
+femaleCats.forEach((element) => {
+
+  const {age, color, name} = element
+
+  const opacity = age / maxAge;
+
+  boxFemale.innerHTML += `
+    <div>
+      <i class="fas fa-cat" style="color:${color}"></i>
+      <i class="fas fa-ribbon" style='color:pink; opacity:${opacity}'></i>
+      ${name}
+    </div>
+  `
+});
+
+
+maleCats.forEach((element) => {
+
+  const {age, color, name} = element
+
+  const opacity = age / maxAge;
+
+  boxMale.innerHTML += `
+    <div>
+      <i class="fas fa-cat" style="color:${color}"></i>
+      <i class="fas fa-ribbon" style='color:blue; opacity:${opacity}'></i>
+      ${name}
+    </div>
+  `
+});
+
+
+// const insertCat = function(catList, box, genderColor) {
+//   catList.forEach((element) => {
+//
+//     const {age, color, name} = element
+//
+//     const opacity = age / maxAge;
+//
+//     box.innerHTML += `
+//       <div>
+//         <i class="fas fa-cat" style="color:${color}"></i>
+//         <i class="fas fa-ribbon" style='color:${genderColor}; opacity:${opacity}'></i>
+//         ${name}
+//       </div>
+//     `
+//   });
+// }
+//
+// insertCat(femaleCats, boxFemale, 'pink')
+// insertCat(maleCats, boxMale, 'blue')
