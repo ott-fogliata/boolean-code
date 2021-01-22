@@ -32,7 +32,7 @@ const editions = {
 }
 
 
-const card = {
+const cards = [{
 
   cardName: 'Grizzly Bears',
 
@@ -48,15 +48,44 @@ const card = {
   cardType: cardTypes[1],
   cardObject: 'Bear',
 
-  editionType: editions['GG'],
+  editionType: editions['BL'],
 
-  //mancano descrizione etc...
+  description: 'Lorem ipsum',
+  story: 'Naltro Lorem Ipsum',
 
   score: {
     power: 2,  // filtrarlo per power
     toughness: 2
   }
 
-}
+  },
+  {
 
-console.log(card);
+    cardName: 'Sviluppatore guerriero',
+
+    cost: {
+      genericCostNumber: 3,
+      costFields: [ // colors array con riferimento a fieldCodes
+        fieldCodes[2],
+        fieldCodes[3]
+      ],
+    },
+
+    picture: 'images/g.png',  // da inserire immagine
+    cardType: cardTypes[1],
+    cardObject: 'Bear',
+
+    editionType: editions['BL'],
+
+    description: 'Lo sviluppatore guerriero spezza i byte in bit!',
+    story: 'Lo sviluppatore guerriero è una forma di essere umano evoluto.',
+
+    score: {
+      power: 5,  // r
+      toughness: 3
+    }
+
+    },
+]
+
+console.log(cards);
