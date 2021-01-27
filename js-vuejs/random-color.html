@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+      <div id="app">
+        <!-- al click su un pulsante il testo cambia randomicamente colore -->
+        <h1 v-if="active" v-bind:style="{color: selectedColor}">Testo che cambia colore</h1>
+        <button @click="changeColor">Click me</button>
+
+        <!-- creiamo un input, se nell'input
+        scrivo ottavio disattivo il box, altrimenti lo mostro -->
+        <div v-if="inputName !== 'Ottavio'" class="generic-box"></div>
+        <input v-model="inputName">
+        <br/>
+        <br/>
+        <!-- se nell'input scrivo ciccio allora
+        la label diventa rossa altrimenti blue -->
+        <label for="ciccio-input" v-bind:style="{color: (inputCiccio === 'ciccio') ? 'red' : 'blue'}">
+          Ciccio field
+        </label>
+        <br/>
+        <label for="ciccio-input" v-bind:style="colorizeTheCiccioField()">
+          Ciccio field (ma con funzione)
+        </label>
+        <br/>
+        <input name="ciccio-input" v-model="inputCiccio">
+
+      </div>
+
+      <script src="js/random-color.js" charset="utf-8"></script>
+  </body>
+</html>
+
+
+
+<!--
+
+let style = {
+  color: '#333'
+}
+
+
+-->
