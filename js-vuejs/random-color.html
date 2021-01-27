@@ -31,6 +31,16 @@
         <br/>
         <input name="ciccio-input" v-model="inputCiccio">
 
+        <!-- scrivere una lista di tutti i colori in colorList -->
+        <ul>
+          <li v-for="color in colorList">{{ color }}</li>
+        </ul>
+
+        <!-- una lista di numeri da 1 a 20 -->
+        <ul>
+          <li v-for="i in 20">{{ i }}</li>
+        </ul>
+
       </div>
 
       <script src="js/random-color.js" charset="utf-8"></script>
