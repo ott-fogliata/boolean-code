@@ -13,6 +13,13 @@ new Vue({
       'black',
       'brown'
     ],
+    people: [
+      'gianpaolo',
+      'giuseppe',
+      'teresa',
+      'davide'
+    ],
+    peopleIDX: 0,
     selectedColor: 'black',
     inputName: 'Scrivi il tuo nome',
     inputCiccio: 'Prova a scrivere ciccio'
@@ -37,7 +44,14 @@ new Vue({
       } else {
         return 'generic-color-text'
       }
+    },
+    next: function() {
+        this.peopleIDX += 1;
+    },
+    prev: function() {
+        this.peopleIDX -= 1;
     }
+
 
   }
 });

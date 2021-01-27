@@ -11,6 +11,12 @@
       <div id="app">
         <!-- al click su un pulsante il testo cambia randomicamente colore -->
         <h1 v-if="active" v-bind:style="{color: selectedColor}">Testo che cambia colore</h1>
+        <!--
+          let style = {
+            color: '#333'
+          }
+        -->
+
         <button @click="changeColor">Click me</button>
 
         <!-- creiamo un input, se nell'input
@@ -19,6 +25,7 @@
         <input v-model="inputName">
         <br/>
         <br/>
+        
         <!-- se nell'input scrivo ciccio allora
         la label diventa rossa altrimenti blue -->
         <label for="ciccio-input" v-bind:style="{color: (inputCiccio === 'ciccio') ? 'red' : 'blue'}">
@@ -36,7 +43,14 @@
         "evidenziare" => in questo associarli una classe
        -->
         <ul>
-          <li v-for="color in colorList"> <!-- può essere qualsiasi elemento (div, span, etc..) -->
+          <!-- for classico -->
+          <li v-for="color in colorList">
+            {{ color }}
+          </li>
+          <br/>
+          <!-- for con elemento e indice array -->
+          <li v-for="(color, index) in colorList"> <!-- può essere qualsiasi elemento (div, span, etc..) -->
+            {{index}}
             <span :class="color === selectedColor ? 'selected-color-text' : 'generic-color-text'">{{ color }}</span>
 
             <!-- leggermente più elegante, ma non stiamo scrivendo troppo? -->
@@ -66,19 +80,20 @@
           <li v-for="i in 20">{{ i }}</li>
         </ul>
 
+
+
+        <!--
+        Abbiamo due pulsanti, prev e next. Ogni volta che clicchiamo su
+        next, mostreremo la persona successiva a quella mostrata attualmente.
+        L'inverso se clicchiamo prev, il precendente all'attuale.
+        -->
+        <div>
+          <span>{{ people[peopleIDX] }}</span>
+          <button @click="prev">prev</button><button @click="next">next</button>
+        </div>
+
       </div>
 
       <script src="js/random-color.js" charset="utf-8"></script>
   </body>
 </html>
-
-
-
-<!--
-
-let style = {
-  color: '#333'
-}
-
-
--->
