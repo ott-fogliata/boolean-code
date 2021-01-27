@@ -31,9 +31,34 @@
         <br/>
         <input name="ciccio-input" v-model="inputCiccio">
 
-        <!-- scrivere una lista di tutti i colori in colorList -->
+        <!-- scrivere una lista di tutti i colori in colorList e evidenziare
+        solo il colore selezionato durante il click (vedi selectedColor)
+        "evidenziare" => in questo associarli una classe
+       -->
         <ul>
-          <li v-for="color in colorList">{{ color }}</li>
+          <li v-for="color in colorList"> <!-- può essere qualsiasi elemento (div, span, etc..) -->
+            <span :class="color === selectedColor ? 'selected-color-text' : 'generic-color-text'">{{ color }}</span>
+
+            <!-- leggermente più elegante, ma non stiamo scrivendo troppo? -->
+            <span :class="
+            {
+              'selected-color-text': (color === selectedColor),
+              'generic-color-text': (color !== selectedColor)
+            }
+            "
+            >{{ color }}</span>
+            <!--
+            {
+            'selected-color-text': true,
+            'generic-color-text': false
+            }
+          -->
+
+          <!-- con un metodo (funzione) -->
+          <span :class="evidenziaColoreSelezionato(color)">{{ color }}</span>
+
+
+          </li>
         </ul>
 
         <!-- una lista di numeri da 1 a 20 -->

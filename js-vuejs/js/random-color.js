@@ -13,7 +13,7 @@ new Vue({
       'black',
       'brown'
     ],
-    selectedColor: '#333',
+    selectedColor: 'black',
     inputName: 'Scrivi il tuo nome',
     inputCiccio: 'Prova a scrivere ciccio'
   },
@@ -30,6 +30,13 @@ new Vue({
     },
     colorizeTheCiccioField: function() {
       return { color: (this.inputCiccio === 'ciccio') ? 'red' : 'blue' }
+    },
+    evidenziaColoreSelezionato: function(color) {
+      if(color === this.selectedColor) {
+        return 'selected-color-text'
+      } else {
+        return 'generic-color-text'
+      }
     }
 
   }
