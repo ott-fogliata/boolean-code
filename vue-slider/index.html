@@ -23,13 +23,20 @@
                 <div class="nav">
                   <i
                     v-for="(image, index) in images"
-                    :class="{
-                      fas: true,
-                      'fa-circle': true,
-                      active: index === currentImageIdx
-                    }"
+                    :class="[
+                      'fas fa-circle',
+                      {
+                        active: index === currentImageIdx
+                      }
+                    ]"
                     @click="selectImageIdx(index)"
                   ></i>
+
+                  <!-- :class="{
+                    fas: true,
+                    'fa-circle': true,
+                    active: index === currentImageIdx
+                  }" -->
 
                     <!-- <i class="fas fa-circle active first"></i>
                     <i class="fas fa-circle"></i>
