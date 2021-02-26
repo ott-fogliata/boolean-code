@@ -5,8 +5,6 @@ $chiocciola = '@';
 
 $dot = '.';
 
-$response = '';
-
 if(strpos($email,$chiocciola) !== false && strpos($email, $dot) !== false){
    $response = 'ok';
 }else{
