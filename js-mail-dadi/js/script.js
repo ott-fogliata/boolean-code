@@ -3,6 +3,8 @@ var emails = ['ciccio@ciccio.it', 'otto@mail.it', 'michele@email.com'];
 var login = prompt('Inserisci la tua mail');
 var mailTrovata = false;  // variabili flag
 
+
+
 for(var i = 0; i < emails.length && !mailTrovata; i++) {
   console.log(emails[i]);
   if(emails[i] === login) {
@@ -38,6 +40,7 @@ var i = 0;
 
 // mailTrovata o è true, o è false
 if(!mailTrovata) {
+
   output.append('\nAccesso negato.')
 } else {
 

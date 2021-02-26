@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.stars {
+  display: inline-block;
+}
+.flag {
+  width: 64px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.movies-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.movie {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 300px;
+  padding: 20px;
+  margin: 10px 20px;
+  background: rgb(46, 58, 70);
+  text-align: center;
+}
+
+#logo {
+  width: 180px;
+  height: auto;
+  vertical-align: middle;
+}

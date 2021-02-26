@@ -29,5 +29,5 @@ nav [class*="col-"] {
 nav [class*="col-"] li {
   display: inline-block;
   text-align: left;
-  line-height: 80px;
+   line-height: 80px;
 }

@@ -36,9 +36,9 @@
 
 .ingredient input[type=checkbox]:checked + span:before {
   position: absolute;
-  top: 50%;
-  left: -2px;
-  transform: translateY(-55%);
+  top: 0;
+  left: 0;
+
   z-index: 1;
   content: "x";
   font-size: 20px;

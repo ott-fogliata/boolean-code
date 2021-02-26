@@ -3,6 +3,7 @@ var listaSpesa = ['Latte', 'Cacao', 'insalata', 'carote', 'tofu', 'caffè', 'vin
 
 var contenutoPrecedente;
 
+
 for (var i = 0; i < listaSpesa.length; i++) {
 
   contenutoPrecedente = listaOutput.innerHTML;
@@ -10,4 +11,10 @@ for (var i = 0; i < listaSpesa.length; i++) {
 
   //listaOutput.innerHTML += '<li>' + listaSpesa[i] + '</li>'
 
+}
+
+var ciao;
+
+if(ciao){
+  console.log('ciao è ' + ciao);
 }
