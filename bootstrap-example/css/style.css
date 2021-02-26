@@ -23,18 +23,18 @@
   background: #1abc9c;
 }
 
-.star-separator {
+.star-container {
     font-size: 30px;
     font-weight: 900;
 }
 
-.star-separator i {
+.star-container i {
   line-height: 4px;
   vertical-align: middle;
 }
 
-.star-separator::before,
-.star-separator::after {
+.star-container::before,
+.star-container::after {
   content: '';
   display: inline-block;
   width: 100px;
@@ -43,18 +43,18 @@
   vertical-align: middle;
 }
 
-.star-separator.star-white::before, .star-separator.star-white::after {
+.star-container.star-white::before, .star-container.star-white::after {
   background-color: white;
 }
 
-.star-separator.star-white{
+.star-container.star-white{
   color:white;
 }
 
-.star-separator.star-dark::before, .star-separator.star-dark::after {
+.star-container.star-dark::before, .star-container.star-dark::after {
   background-color: #2c3e50;
 }
 
-.star-separator.star-dark{
+.star-container.star-dark{
   color:#2c3e50;
 }

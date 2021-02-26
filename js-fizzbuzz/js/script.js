@@ -1,14 +1,22 @@
+var response;
+
 for(var x = 1; x <= 100; x++) {
 
   if(x % 3 === 0 && x % 5 === 0) {
-    console.log('fizzbuzz');
+    // console.log('fizzbuzz');
+    response = 'fizzbuzz';
   } else if(x % 3 === 0) {
-    console.log('fizz');
+    // console.log('fizz');
+    response = 'fizz';
   } else if(x % 5 === 0) {
-    console.log('buzz');
+    // console.log('buzz');
+    response = 'buzz';
   } else {
-    console.log(x);
+    // console.log(x);
+    response = x;
   }
+
+  console.log(response);
 
   // TODO: potremmo ad esempio popolare una variabile sin dal principio
   // e solo dopo, andare a scrivere questa variabile in un console.log() ?

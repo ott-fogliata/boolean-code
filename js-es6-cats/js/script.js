@@ -201,4 +201,5 @@ const selector = $('.color-select');
 selector.change(function() {
   let valore = $(this).val();
   alert(valore);
+
 })
