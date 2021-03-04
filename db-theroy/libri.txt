@@ -1,0 +1,27 @@
+Proviamo ad immaginare la struttura di una tabella che contiene
+informazioni sui libri contenuti in una biblioteca.
+
+database = biblioteca
+tabella = libri
+
+book_id        PK       BIGINT             NOTNULL            AUTO_INCREMENT
+title                   VARCHAR            NOTNULL
+author                  VARCHAR            NULL
+genere                  VARCHAR            NOTNULL
+casa_editrice           VARCHAR            NULL
+prezzo                  DOUBLE(6,2)        NOTNULL            DEFAULT 0.00
+edizione                VARCHAR            NOTNULL
+n_pagine                SMALLINT           NOTNULL
+data_pubblicazione      DATE               NOTNULL
+lingua                  VARCHAR(2)         NOTNULL            DEFAULT en
+usato                   TINYINT(1)         NOTNULL
+isbn                    VARCHAR(17)        NOTNULL            UNIQUE
+
+
+
+
+
+
+
+1 ciccio
+3 michele
