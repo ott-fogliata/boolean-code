@@ -16,12 +16,3 @@ data_pubblicazione      DATE               NOTNULL
 lingua                  VARCHAR(2)         NOTNULL            DEFAULT en
 usato                   TINYINT(1)         NOTNULL
 isbn                    VARCHAR(17)        NOTNULL            UNIQUE
-
-
-
-
-
-
-
-1 ciccio
-3 michele
