@@ -9,7 +9,7 @@ title                   VARCHAR            NOTNULL
 author                  VARCHAR            NULL
 genere                  VARCHAR            NOTNULL
 casa_editrice           VARCHAR            NULL
-prezzo                  DOUBLE(6,2)        NOTNULL            DEFAULT 0.00
+prezzo                  FLOAT(6,2)         NOTNULL            DEFAULT 0.00
 edizione                VARCHAR            NOTNULL
 n_pagine                SMALLINT           NOTNULL
 data_pubblicazione      DATE               NOTNULL
