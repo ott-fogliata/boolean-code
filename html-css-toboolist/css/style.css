@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* utility classes */
+.button {
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.button-primary {
+    background: #14aaf5;
+    color: #fff;
+    border-color: #14aaf5;
+}
+
+.button-light {
+    background: #fff;
+    color: #c4cbd0;
+    border-color: #c4cbd0;
+}
+
+.padding-layout {
+    padding: 20px 50px;
+}
+
+.dot-list {
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* end utility classes */
+
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80px;
+    padding: 15px;
+    background: #fff;
+}
+
+#logo-img {
+    vertical-align: middle;
+}
+
+.title-text {
+    font-size: 32px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+main {
+    width:1200px;
+    margin: 80px auto 0 auto;
+    background-color: #fff;
+}
+
+.section-list {
+    border-top: 2px #eee solid;
+}
+
+ul {
+    list-style: none;
+}
+
+.check {
+    color: green;
+    border-color: green;
+}
+
+.cross {
+    color: red;
+    border-color: red;
+}
+
+.cross::before {
+    content:"\2573";
+}
+
+h2::before {
+    content: "\25BE";
+    margin-right: 8px;
+}
