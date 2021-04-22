@@ -1,0 +1,71 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    background: #ccc;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float: right;
+}
+
+.box-red {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.box-blue {
+    background: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.box-example-1 {
+    background: red;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.text {
+    background: #ccc;
+    width: 600px;
+    border: 2px #333 solid;
+}
+
+
+
+.my-site-web header {
+    height: 150px;
+    background: #000;
+    color: #fff;
+}
+
+.my-site-web article {
+    width: 70%;
+}
+
+.my-site-web aside {
+    width: 30%;
+}
+
+
+.my-site-web footer {
+    background: green;
+    height: 150px;
+}
+
+.clear {
+    clear: both;
+}
