@@ -81,3 +81,29 @@ footer {
     background: #ccc;
     height: 200px;
 }
+
+
+/* per index-layout.html */
+
+nav {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px #333 solid;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+li:last-child {
+    margin-right: 0;
+}
