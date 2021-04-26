@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 650px;
+    height: 650px;
+    background: #ccc;
+    margin: 50px auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+[class^="red-"], [class^="green-"] {
+    border: 8px rgba(0,0,0,.5) solid;
+    border-radius: 8px;
+}
+
+[class^="red-"] {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+[class^="blue-"] {
+    background: blue;
+    width: 200px;
+    height: 200px;
+}
+
+
+[class^="green-"] {
+    background: green;
+    width: 200px;
+    height: 200px;
+}
+
+.red-1 {
+    top: 20px;
+    position: relative;
+}
+
+.green-1{
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+
+.container-relative {
+    position: relative;
+}
+
+.red-2 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+/* position absolute con div opacity  */
+
+.container-img {
+    position: relative;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 900px;
+    margin: 0 auto 100px auto;
+}
+
+.img-opacity:hover {
+    display: none; 
+}
+
+.container-img:hover .text {
+    color: #333;
+} 
+
+.img-opacity {
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    /*oppure opacity: 0.3; */ 
+    width: 100%;
+    height: 400px;
+}
+
+.text {
+    position: absolute;
+    bottom: 100px;
+    left: 100px; 
+    color: #fff;
+    font-size: 30px;
+}
+
+.container-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ccc;
+    border: 8px rgba(0,0,0,.5) solid;
+}
+
+.menu {
+    width: 500px;
+    margin: 0 auto;
+    height: 100px;
+    background: #111;
+}
+
+/* position in float */
+
+.content-relative {
+    position: relative;
+    width: 100%;
+}
+
+.blue-1 {
+    position: absolute;
+    top: 20px;
+    left: 40px; 
+    width: 100px;
+    height: 100px;
+}
+
