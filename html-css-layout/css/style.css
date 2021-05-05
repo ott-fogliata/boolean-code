@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 0 15px;
+}
+
+.container.colored {
+    height: 10px;
+    background-color: #333;
+    margin-top: 50px;
+}
+
+.col {
+    float: left;
+    border: 4px #999 solid;
+    width: calc(100% / 3 - 10px);
+    padding: 15px;
+}
+
+.col.center {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
