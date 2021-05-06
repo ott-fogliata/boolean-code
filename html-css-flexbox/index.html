@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flexbox</title>
+</head>
+
+<body>
+
+    <h1>Simple Flex</h1>
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Flex Direction: Column</h1>
+    <div class="container direction-column">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Reverse Row</h1>
+    <div class="container reverse-row">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Reverse Column</h1>
+    <div class="container reverse-column">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Justify Content: <u>start</u></h1>
+    <div class="container flex-start">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Justify Content: <u>end</u></h1>
+    <div class="container flex-end">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Align Items: <u>start</u></h1>
+    <div class="container flex-align-start">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Align Items: <u>end</u></h1>
+    <div class="container flex-align-end">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Align Items + Justify Content</h1>
+    <div class="container justify-align">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Justify Content: <u>end</u> (con direction column)</h1>
+    <pre class="code">
+        justify-content: flex-end;
+        flex-direction: column;
+    </pre>
+    <div class="container flex-end direction-column">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Align Items: <u>end</u> (con direction column)</h1>
+    <pre class="code">
+        align-items: flex-end;
+        flex-direction: column;
+    </pre>
+    <div class="container flex-align-end direction-column">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <!-- la parte bella -->
+    <h1>Space-between</h1>
+    <div class="container space-between">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1>Space-between (5 elementi)</h1>
+    <div class="container space-between">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </div>
+
+
+    <h1>Space-between (8 elementi)</h1>
+    <div class="container space-between">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+    </div>
+
+    <h1>Space-around</h1>
+    <div class="container space-around">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Justify Center</h1>
+    <div class="container justify-center">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Align Center</h1>
+    <div class="container align-center">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Super Center (chi ha detto absolute, transform/translate?)</h1>
+    <div class="container tutto-center">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Super Center con column</h1>
+    <div class="container tutto-center-column">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+
+    </div>
+
+    <h1>Align items baseline</h1>
+    <div class="container align-baseline">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item-strange">3</div>
+        <div class="item">3</div>
+
+    </div>
+
+
+    <h1><u>Wrap</u>! (8 elementi)</h1>
+    <div class="container wrap">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+    </div>
+
+
+    <h1><u>Wrap</u> Align center (8 elementi)</h1>
+    <div class="container wrap align-center">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+    </div>
+
+    <h1><u>Wrap</u> Più simile a un layout </h1>
+    <div class="container container-no-height wrap">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+
+    </div>
+
+
+    <!-- esempio layout:
+    abbiamo 4 box, due per ogni riga.
+    -->
+
+    <div class="container-page">
+        <div class="box">Notizia 1</div>
+        <div class="box">Notizia 2</div>
+        <div class="box">Notizia 3</div>
+        <div class="box">Notizia 4</div>
+    </div>
+
+
+    <div class="container-page-2">
+        <div class="box-b grow-1">Notizia 1</div>
+        <div class="box-b grow-2">Notizia 2</div>
+        <div class="box-b grow-1">Notizia 3</div>
+    </div>
+
+
+</body>
+
+</html>

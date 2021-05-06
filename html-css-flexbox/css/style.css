@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.code {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.container, .container-no-height {
+    width: 1200px;
+    height: 900px;
+    background-color: cornflowerblue;
+    display: flex;
+    margin: 80px auto;  
+}
+
+.container-no-height {
+    height: auto;
+}
+
+.item, .item-strange {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    border: 2px #fff solid;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 200px;
+}
+
+.item-strange {
+    height: 500px;
+    line-height: 500px;
+}
+
+.container.direction-column {
+    flex-direction: column;
+}
+
+.container.reverse-row {
+    flex-direction: row-reverse;
+}
+
+.container.reverse-column {
+    flex-direction: column-reverse;
+}
+
+.container.flex-start {
+    justify-content: flex-start;
+}
+
+.container.flex-end {
+    justify-content: flex-end;
+}
+
+.container.flex-align-start {
+    align-items: flex-start;
+}
+
+.container.flex-align-end {
+    align-items: flex-end;
+}
+
+.container.justify-align {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container.space-between {
+    justify-content: space-between;
+}
+
+.container.space-around {
+    justify-content: space-around;
+}
+
+.container.justify-center {
+    justify-content: center;
+}
+
+
+.container.align-center {
+    align-items: center;
+}
+
+.container.tutto-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container.tutto-center-column {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container.align-baseline {
+    align-items: baseline;
+}
+
+.container.wrap {
+    flex-wrap: wrap;
+}
+
+/* esempio layout */
+.container-page {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.box {
+    height: 400px;
+    text-align:center;
+    padding: 50px;
+    background: teal;
+    border: 4px #ccc solid;
+    flex-basis: 50%;
+}
+
+.container-page-2 {
+    max-width: 1200px;
+    width: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.box-b {
+    height: 400px;
+    text-align:center;
+    padding: 50px;
+    background: teal;
+    border: 4px #ccc solid;
+}
+
+.grow-1 {
+    flex-grow: 1;
+    order:2;
+}
+
+.grow-2 {
+    flex-grow: 2;
+    order: 1;
+}
