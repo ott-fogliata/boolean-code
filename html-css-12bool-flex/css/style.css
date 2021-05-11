@@ -1,0 +1,24 @@
+
+body {
+    color: #fff;
+}
+
+.container {
+}
+
+.row {
+    height: 100%;
+}
+
+[class*="col"] {
+    background: hsl(180, 100%, 25%);
+    border: 2px #ccc solid;
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+}
+
+[class*="col"] > .row > [class*="col"] 
+{
+   height: 100%;
+}
