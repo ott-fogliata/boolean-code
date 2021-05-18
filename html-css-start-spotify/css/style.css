@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    background: teal;
+}
+
+.app {
+    max-height: 100vh;
+}
+
+.app main {
+    height: calc(100vh - 90px);
+    background-color: burlywood;
+}
+
+.app footer {
+    background-color: #282828;
+    height: 90px;
+    display: flex;
+}
+
+main .sidebar {
+    background: #ccc;
+}
+
+main .content {
+    background-color: #141922;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.example {
+    height: 200vh;
+    width: 200px;
+    margin: 0 auto;
+    background-color: teal;
+}
+
+
+
+.player-album, .player-audio {
+    flex-basis: 230px;
+    height: 100%;
+    color: #fff;
+
+}
+
+.player-controller {
+    flex-basis: 50%;
+    height: 100%;
+    flex-grow: 1;
+    color: #fff;
+
+}
+
+.player-album {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.player-audio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.player-album-cover {
+    width: 20%;
+}
+
+.player-album-cover img {
+    width: 100%;
+}
+
+.player-album-title {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.player-album-title h2 {
+    font-size: 10px;
+}
+
+
+.player-album-title .song-name {
+    font-size: 8px;
+    line-height: 1.4;
+}
+
+.player-album-icons {
+    width: 30%;
+    padding: 0 10px;
+}
+
+.example-block {
+    background-color: #fff;
+    border: 1px #333 solid;
+    width: 40px;
+    height: 40px;
+}
+
