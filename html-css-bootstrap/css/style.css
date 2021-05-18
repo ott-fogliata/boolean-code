@@ -1,0 +1,20 @@
+.container h1 {
+    text-align: center;
+}
+
+.container {
+    border: 1px #333 solid;
+}
+
+.row {
+    border: 2px teal solid;
+}
+
+[class*='col'] {
+    border: 4px orange solid;
+}
+
+.color-fluid {
+    background-color: teal;
+    height: 300px;
+}
