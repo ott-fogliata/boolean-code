@@ -1,0 +1,32 @@
+.box-mini-games {
+    border-radius: 20px;
+    border: 2px #fff solid;
+}
+
+.box-mini-games:hover {
+    border: 2px blue solid;
+}
+
+.box-mini-games-inner {
+    border: 2px #fff solid;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.box-mini-games img {
+    width: 100%;
+}
+
+.playstation-thumb {
+    width: 100%;
+}
+
+
+.description {
+    margin-top: 25px;
+}
+
+.col {
+    border: 2px #ccc solid;
+}
