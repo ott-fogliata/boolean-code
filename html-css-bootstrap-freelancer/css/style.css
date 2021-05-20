@@ -1,0 +1,62 @@
+/* riscrittura navbar bootstrap */ 
+.bg-custom-color {
+    background-color: #2c3d4f;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px #ccc solid;
+}
+
+/* ---------------------------- */
+
+.section-container {
+   background-color: #19bc9b; 
+   padding: 50px 0;
+}
+
+header {
+    margin-top: 56px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.colored-box {
+    background-color: orangered;
+    height: 260px;
+    margin-bottom: 24px;
+}
+
+.titolo-boxes {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.titolo-boxes h2 {
+    font-size: 50px;
+}
+
+.about-content {
+    height: 400px;
+    background-color: teal;
+}
+
+.contact-form input {
+    border: 0;
+    border-bottom: 1px #ccc solid;
+    width: 100%;
+}
+
+.contact-form ::placeholder {
+    color: red;
+}
