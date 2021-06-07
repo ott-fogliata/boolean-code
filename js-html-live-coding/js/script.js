@@ -38,3 +38,30 @@ for (var i = 0; i < clickButtons.length; i++) {
         this.style.color = 'red';
     });
 }
+
+
+// ------------------------------------------------------------------
+// Tre checkbox, ciascuno di loro ha come valore (value)
+// un colore. Se clicco sul pulsante "Create", crea N riquadri
+// per quante sono le checkbox flaggate, 
+// con lo stesso colore delle checkbox selezionate.
+
+
+var createButton = document.getElementsByClassName('create-boxes')[0];
+var outputBoxes = document.getElementById('boxes-container');
+
+createButton.addEventListener('click', function () {
+    var checkboxes = document.getElementsByClassName('check-colors');
+    for (var x = 0; x < checkboxes.length; x++) {
+
+        // verifichiamo che la checkbox sia stata checkata 
+        if (checkboxes[x].checked) {
+            // console.log(checkboxes[x]);
+            console.log(checkboxes[x].value);
+            
+            outputBoxes.innerHTML += '<div class="box ' + checkboxes[x].value + '">A</div>';
+
+        }
+
+    }
+})
