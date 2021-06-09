@@ -73,3 +73,40 @@ if (isPari(userNum)) {
 } else {
     outputElement.innerText += "\nIl numero è dispari";
 }
+
+
+//
+function getRandomNumber(min, max) {
+    var result = Math.floor(Math.random() * (max - min + 1) + min)
+    return result;
+}
+
+var random1 = getRandomNumber(5, 100);
+var random2 = getRandomNumber(1, 1000);
+
+outputElement.innerText += '\nPrimo numero random: ' + random1
+outputElement.innerText += '\nSecondo numero random: ' + random2
+
+outputElement.innerText += '\n-------------------------';
+
+for (var x = 0; x < 10; x++) {
+    var resultRandom10 = getRandomNumber(1, 1000);
+    outputElement.innerText += '\n' + resultRandom10;
+}
+
+/*
+Chiediamo all’utente il nome, una funziona ritornerà il suo nome con la prima lettera sempre maiuscola.
+Stampate il suo nome “corretto” nell’html.
+Notate bene. La funzione cercherà sempre di trasformare la prima lettera in maiuscolo anche quando questa sarà stata inserita correttamente dall’utente. E ci va bene così.
+Sicuramente potrà essere utile lo slice applicato alle stringhe.
+ */
+
+function getFixName(name) {
+    var fixedName = name[0].toUpperCase() + name.slice(1)
+    return fixedName;
+}
+
+
+var userName = prompt('Inserisci il tuo nome');
+
+outputElement.innerText += '\nIl tuo nome è ' + getFixName(userName);
