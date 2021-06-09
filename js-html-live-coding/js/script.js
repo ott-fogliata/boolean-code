@@ -65,3 +65,31 @@ createButton.addEventListener('click', function () {
 
     }
 })
+
+// -----------------
+// al click su somma-button, il js somma 
+// tutti i numeri selezionati
+
+var createSum = document.getElementById('somma-button');
+
+var resultSumElement = document.getElementById('result-sum');
+
+createSum.addEventListener('click', function () {
+    
+    var resultSumInt = 0;
+
+    var checkNum = document.getElementsByClassName('somma-check');
+
+    for (var i = 0; i < checkNum.length; i++) {
+
+        if (checkNum[i].checked) {
+            
+            resultSumInt += parseInt(checkNum[i].value)
+
+        }
+
+    }
+
+    resultSumElement.innerHTML = 'Il risultato è: ' + resultSumInt;
+
+})
