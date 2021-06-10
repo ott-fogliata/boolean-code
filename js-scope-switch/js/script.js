@@ -64,3 +64,38 @@ var list = [1, 4, 5, 3, 7];
 
 var result = isInArray(list, 4);
 console.log('Ho trovato l\'elemento?', result);
+
+// --------------------------------------------------------------------------
+
+// chiediamo il nome all'invitato, se si chiama Gino, lo facciamo entrare senza problemi
+// se si chiama Pino, lo facciamo entrare solo se paga 10€
+// altrimenti non può entrare.
+
+// if userName is gino then entra
+// else if userName is pino then entra but paga
+// else non entra
+
+var userName = prompt('Dimmi il tuo nome');
+
+// switch prende in considerazione lo userName
+switch (userName) {
+
+    // adesso analizzalo
+    case "Gino":
+        var message = 'Puoi entrare gratis!';
+        console.log('è gino')
+        break; // basta così, è questo il caso, non andiamo avanti nell'analisi
+    
+    case "Pino":
+        var message = 'Puoi entrare ma paga 10€';
+        console.log('è pino')
+        break;
+    
+    default:
+        var message = 'Non puoi entrare!';
+        console.log('non può entrare')
+}
+
+
+
+alert(message);
