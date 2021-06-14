@@ -10,13 +10,13 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
 generiamo 16 numeri => creo funzione => while array.length < 16, 
 perché di volta in volta pusho nell'array il numero generato, solo se non è già presente
 --- 
-    0. while listNum.length <= 16
+    0. while listNum.length < 16
     1.      genero un numero randomico
     2.      if num not in array then, lo pusho nell'array listNum
 
 ora listNum contiene 16 numeri NON duplicati.
 
-while userNums.length <= 84
+while userNums.length < 84
     chiedi all'utente un numero 
     if num (quello inserito dall'utente) not in array userNums:
         if num in array listNum (numeri generati dal computer), then break. // il gioco è finito, si stoppa il ciclo.
