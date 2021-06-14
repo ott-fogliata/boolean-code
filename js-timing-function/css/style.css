@@ -1,0 +1,16 @@
+.newsletter-modal {
+    display: none;
+    position: fixed;
+    top: 200px;
+    border: 2px #333 solid;
+    border-radius: 15px;
+    padding: 32px;
+    background-color: teal;
+    color: #fff;
+}
+
+.newsletter-modal .close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
