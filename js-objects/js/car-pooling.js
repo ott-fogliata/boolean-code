@@ -28,10 +28,10 @@ while (car.passengers.length < 2) {
 
 console.log(car);
 
-
+/*
 for (var k in car) {
     console.log(k, car[k])
-}
+} */
 
 // e se dovessimo semplicemente stampare tutti i passeggeri?
 
