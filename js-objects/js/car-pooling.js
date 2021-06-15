@@ -33,33 +33,7 @@ for (var k in car) {
     console.log(k, car[k])
 }
 
-var ulElement = document.getElementById('car');
-
-// ulElement.innerHTML = '<li>model: </li>'
-var htmlString = '';
-
-for (var k in car) {  // ciclo nell'oggetto
-
-    if (k === 'passengers') { // qui scelgo l'array
-        htmlString += '<li>' + k + ': ';
-
-        for (var x = 0; x < car[k].length; x++) { // ciclo l'array dei passengers
-            htmlString += car[k][x]['name'] + ', ';
-        }
-
-        htmlString += '</li>';
-
-    } else {
-        htmlString += '<li>' + k + ': ' + car[k] + '</li>'
-    }
-}
-
-ulElement.innerHTML = htmlString;
-
 // e se dovessimo semplicemente stampare tutti i passeggeri?
-
-
-var passengersHtmlElement = document.getElementById('pass');
 
 for (var i = 0; i < car.passengers.length; i++) {
 
@@ -68,6 +42,12 @@ for (var i = 0; i < car.passengers.length; i++) {
     
     // per stampare tutte le proprietà key: value dell'oggetto
     for (var key in car.passengers[i]) {
+        // i = 0; key = 'name'
+        // i = 0; key = 'surname'
+        // lui salta ora il for/in (è finito)
+        // i = 1; key = 'name'
+        // i = 1; key = 'surname'
+        // ...
         console.log(key, car.passengers[i][key])
     }
     
