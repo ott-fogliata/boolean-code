@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container ul:first-child {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.table-container ul li {
+    border: 1px #ccc solid;
+    flex-basis: 25%;
+}
+
+.table-container ul li:last-child {
+    flex-basis: 40%;
+}
