@@ -61,6 +61,8 @@ for (var x = 0; x < studentsList.length; x++) {
 var tableHTML = document.querySelector('.table-container');
 
 for (var x = 0; x < studentsList.length; x++) {
+
+    /*
     var tableRow = '<ul>';  // una variabile "locale"
     var thisStudent = studentsList[x];
     
@@ -71,6 +73,21 @@ for (var x = 0; x < studentsList.length; x++) {
 
     tableRow += '</ul>';
     tableHTML.innerHTML += tableRow;
+    
+    */
+    
+    // es6:
+    
+    const { nome, cognome, age, descrizione } = studentsList[x];
+
+    tableHTML.innerHTML += `
+    <ul>
+        <li>${nome}</li>
+        <li>${cognome}</li>
+        <li>${age}</li>
+        <li>${descrizione}</li>
+    </ul>
+    `
 }
 
 
