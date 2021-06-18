@@ -227,3 +227,101 @@ for (let x = 0; x < studentsArray.length; x++) {
 const { nome, cognome } = lastOldStudent;
 
 console.log(`Lo studente più anziano è ${nome} ${cognome}`)
+
+
+// voglio sommare dei numeri.
+
+function sum(a, b) {
+    return a + b;
+}
+
+
+function sum2(...nums) {
+    console.log(nums);
+    let tot = 0;
+    for (let x = 0; x < nums.length; x++) {
+        tot += nums[x];
+    }
+    return tot;
+}
+
+const result = sum2(1, 2, 5, 8, 10);
+
+console.log(result);
+
+const result2 = sum2(5, 5);
+
+console.log(result2);
+
+
+const array1 = [1, 2, 3];
+
+const array2 = [4, 5, 6];
+
+const finalArray = [...array1, ...array2];
+
+console.log(finalArray);
+
+const studente = {
+    nome: 'Pippo',
+    cognome: 'Baudo'
+}
+// vogliamo aggiungere una proprietà e fare una copia dell'intero oggetto.
+
+const newStudent = { ...studente, age: 80 };
+
+console.log(studente);
+console.log(newStudent);
+
+
+
+/** 
+Snack2
+Creare un array di oggetti di squadre di calcio.
+Ogni squadra avrà diverse proprietà:
+nome,
+punti fatti,
+falli subiti.
+
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+
+Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
+
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+Svilupparlo in ES6.
+ */
+
+
+const listTeams = [
+    {
+        nome: 'inter',
+        score: 0,
+        fouls: 0,
+    },
+    {
+        nome: 'juventus',
+        score: 0,
+        fouls: 0,
+    },
+    {
+        nome: 'taranto',
+        score: 0,
+        fouls: 0,
+    }
+];
+
+const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+/*
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+*/
+
+for (let x = 0; x < listTeams.length; x++) {
+    listTeams[x].score = randomNumber(0, 100);
+    listTeams[x].fouls = randomNumber(0, 100);
+}
+
+console.log(listTeams)
+
