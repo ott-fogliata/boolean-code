@@ -135,3 +135,95 @@ let somma = (a, b) => a + b;
 
 const risultato = somma(1, 1);
 console.log(risultato);
+
+
+// ------------
+
+
+// creiamo un array di oggetti, ogni oggetto è uno studente, con nome, cognome, età.
+// dobbiamo stampare a schermo lo studente più grande.
+
+// prima in es5 e poi in es6, con il destructuring e template literal
+
+/*
+var studentsArray = [
+    {
+        nome: 'Maccio',
+        cognome: 'Capatonda',
+        age: 40
+    },
+    {
+        nome: 'Gino',
+        cognome: 'Paoli',
+        age: 18
+    },
+    {
+        nome: 'Pippo',
+        cognome: 'Baudo',
+        age: 80
+    }
+];
+
+var lastOldStudent;  // qui metterò l'oggetto studente
+var lastAgeOldStudent = 0; // qui metterò solo l'età dello studente più anziano mai visto
+
+for (var x = 0; x < studentsArray.length; x++) {
+
+    var thisAge = studentsArray[x].age;
+    if (thisAge > lastAgeOldStudent) {
+        lastOldStudent = studentsArray[x];
+        lastAgeOldStudent = thisAge;
+    }
+
+    // 1. 18 > 0, sì => salva gino paoli in lastOldStudent e salva anche 18 in lastAgeOldStudent
+    // 2. 80 > 18, sì => salva pippo baudo in lastOldStudent e salva anche 80 in lastAgeOldStudent
+    // 3. 40 > 80, no => non salva nulla.
+
+}
+
+
+console.log(lastOldStudent);
+*/
+
+
+const studentsArray = [
+    {
+        nome: 'Maccio',
+        cognome: 'Capatonda',
+        age: 40
+    },
+    {
+        nome: 'Gino',
+        cognome: 'Paoli',
+        age: 18
+    },
+    {
+        nome: 'Pippo',
+        cognome: 'Baudo',
+        age: 80
+    }
+];
+
+let lastOldStudent;  // qui metterò l'oggetto studente
+let lastAgeOldStudent = 0; // qui metterò solo l'età dello studente più anziano mai visto
+
+
+for (let x = 0; x < studentsArray.length; x++) {
+
+    const { age } = studentsArray[x];
+    
+    if (age > lastAgeOldStudent) {
+        lastOldStudent = studentsArray[x];
+        lastAgeOldStudent = age;
+    }
+
+    // 1. 18 > 0, sì => salva gino paoli in lastOldStudent e salva anche 18 in lastAgeOldStudent
+    // 2. 80 > 18, sì => salva pippo baudo in lastOldStudent e salva anche 80 in lastAgeOldStudent
+    // 3. 40 > 80, no => non salva nulla.
+
+}
+
+
+const { nome, cognome } = lastOldStudent;
+
+console.log(`Lo studente più anziano è ${nome} ${cognome}`)
