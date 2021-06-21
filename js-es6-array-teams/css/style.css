@@ -1,0 +1,29 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 1px #ccc solid;
+}
+
+.table-container ul:first-child {
+    background: #eee;
+}
+
+.table-container ul li {
+    flex-grow: 1;
+    flex-basis: calc(100%/3);  /*  33,3333333333 */
+    border-right: 2px #ccc solid;
+    padding: 10px;
+}
+
+.table-container ul.yellow {
+    background-color: yellow;
+}
