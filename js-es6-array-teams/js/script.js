@@ -9,7 +9,7 @@ con più falli subiti.
 */
 
 
-let teams = [
+const teams = [
     {
         nome: 'Inter',
         score: 10,
