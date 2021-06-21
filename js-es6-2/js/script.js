@@ -100,7 +100,7 @@ listaNumeri.forEach((num) => {
         console.log('HO TROVATO UN NUMERO PARI');
         numeriPari.push(num)
     }
-})
+});
 
 console.log('La somma è', sum)
 
@@ -176,3 +176,42 @@ const listaRisultatiPari = listaTantiNumeri.filter((numero) => {
 
 
 console.log(listaRisultatiPari);
+
+
+
+/*
+
+Creare una lista di numeri. 
+Con filter, creare un nuovo array con SOLO i numeri 
+che vanno da 5 a 10 compresi.
+*/
+
+const listNums = [1, 5, 4, 88, 9, 10, 3, 100, 12];
+
+const newList = listNums.filter((num) => {
+    return num >= 5 && num <= 10;
+});
+
+console.log(newList)
+
+
+// ARGOMENTO BONUS! 
+
+// ---- REDUCE!
+
+
+// .forEach((element, index, array) => {})
+// .filter((element) => {})
+
+
+// .reduce((accumulatore, il-valore-attuale) => {})
+
+// obiettivo: sommare tutti i numeri dentro l'array.
+
+let arrayNums = [1, 4, 5, 18, 3];
+
+const result = arrayNums.reduce((totale, numAttuale) => {
+    return totale + numAttuale
+})
+
+console.log('La somma con reduce è:', result);
