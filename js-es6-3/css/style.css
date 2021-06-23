@@ -1,0 +1,55 @@
+
+.icons-container {
+    background: #ddd;
+}
+
+.icon-card {
+    flex-basis: calc(100% / 5);
+    max-width: calc(100% / 5);  /* todo: da rivedere per il mobile */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icon-card-inner {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    height: 120px;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.icon-card-inner .icon {
+    width: 100%;
+    font-size: 32px;
+}
+
+.icon-card-inner .name {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+
+/* per la 2^ milestone */
+
+.icon.animal {
+    color: blue;
+}
+
+
+.icon.vegetable {
+    color: orange;
+}
+
+.icon.user {
+    color: purple;
+}
+
+/* -------------------- */
+
+
