@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js INTRO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+
+    <!-- commento prima di app -->
+
+    <div id="app">
+        <!-- qui andrà tutto il nostro codice 
+        HTML in vue.js
+        -->
+
+        <!-- l'input si aggancia al dato name -->
+        <!-- al click sul pulsante "Saluta", appare un alert dove 
+        saluta l'utente (con il suo nome.)-->
+        <!--
+            il value, ci sta.
+
+            e l'event?
+            e lancialo l'event che facciamo?
+            dovremmo lanciare la funzione, ma come?
+
+            dovremmo riuscire a trovare un punto in button
+            dove direttamente eseguire la funzione saluta()
+
+        -->
+        <input v-model="name" placeholder="Inserisci il tuo nome" @keyup.enter='saluta'>
+        <button @click='saluta'>Saluta!</button>
+        <br />
+
+        <span>Ciao {{ name }}!</span>
+
+        <hr />
+
+        <!-- al click sul pulsante cambiamo la 
+            classe in .show e lo rendiamo visibile-->
+        <div :class="contentClass">Div con classi</div>
+        <button @click='showElement'>{{ buttonText }}</button>
+
+        <!-- il v-model serve per agganciare 
+        un elemento sia in scrittura che lettura,
+        naturalmente l'elemento html deve avere la capacità
+        di scrivere (input, select, checkbox)
+
+        la sitassi {{ chiave_data }} è utilizzata in lettura
+        del valore di quella chiave in data. Questo potremmo
+        utilizzarlo un po' ovunque nel nostro html, purché
+        non sia un altro attributo. Cioè lo possiamo utilizzare
+        nel "plain-html". 
+        -->
+
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
