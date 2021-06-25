@@ -39,3 +39,12 @@ cats.forEach((cat) => {
         `;
 
 });
+
+
+// ternary operator
+const flag = true;
+
+//                   condizione r if   r else
+let linguaSelezionata = flag ? 'en' : 'it';
+
+console.log(linguaSelezionata);

@@ -1,4 +1,6 @@
-const app = new Vue(
+Vue.config.devtools = true;
+
+new Vue(
     {
         el: '#app',
         data: {
@@ -9,6 +11,9 @@ const app = new Vue(
             name: '',
             contentClass: 'hidden',
             buttonText: 'Show me!',
+            showFlag: false,
+            showHello: true,
+            listaNomi: ['Pippo', 'Gino', 'Laura']
         },
         methods: {
             saluta: function () {
@@ -23,6 +28,10 @@ const app = new Vue(
                     this.buttonText = 'Show me!'
                     this.contentClass = 'hidden';
                 }
+            },
+            checkSalutoPersonalizzato: function () {
+                return this.name.toLowerCase() === 'pierfilippo'
+                    && this.showHello === true
             }
         }
     }

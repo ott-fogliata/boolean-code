@@ -51,12 +51,54 @@
         naturalmente l'elemento html deve avere la capacità
         di scrivere (input, select, checkbox)
 
-        la sitassi {{ chiave_data }} è utilizzata in lettura
+        la sintassi {{ chiave_data }} è utilizzata in lettura
         del valore di quella chiave in data. Questo potremmo
         utilizzarlo un po' ovunque nel nostro html, purché
         non sia un altro attributo. Cioè lo possiamo utilizzare
         nel "plain-html". 
         -->
+
+        <!-- 
+
+            v-if
+        -->
+
+        <div class="box-1" v-if="showFlag">
+            Lorem ipsum dolor, sit amet consectetur adipisicing 
+            elit. Totam a facere nam, ex accusamus tempore! 
+            Voluptatum similique qui perferendis expedita 
+            ab architecto obcaecati dolor, reiciendis illum, 
+            voluptates laboriosam animi minima.
+
+        </div> 
+        <div class="placeholder" v-else>
+            Non mostro nulla
+        </div>
+
+        <hr />
+
+        <!-- se il nome dell'utente è pierfilippo 
+            e showHello è uguale a True, allora mostra
+            un saluto personalizzato
+        -->
+        <div v-if="checkSalutoPersonalizzato()">
+            Ciao {{name}}, questo è un saluto!
+        </div>
+
+        <!--
+
+            v-for
+
+        -->
+        <!-- stampiamo i 3 nomi nell'array listaNomi -->
+        <ul>
+            <li v-for="parola in listaNomi">
+                {{ parola }}
+            </li>
+
+        </ul>
+
+
 
     </div>
     
