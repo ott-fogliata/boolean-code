@@ -11,7 +11,7 @@ new Vue(
                 'img/image4.jpg',
             ],
             pictureIndex: 0,
-            intervalSlot: null,
+            timerSlot: null,
         },
         // la pagina vue.js è appena stata creata.
         created() {
@@ -22,7 +22,10 @@ new Vue(
         },
         methods: {
             timer: function () {
-                this.intervalSlot = setInterval(() => {
+                console.log('deleting the timerSlot')
+                clearTimeout(this.timerSlot);
+                this.timerSlot = setTimeout(() => {
+                    console.log('next img')
                     this.next();
                 }, 3000)  
             },
@@ -35,7 +38,6 @@ new Vue(
                     this.pictureIndex++;
                 }
 
-                clearInterval(this.intervalSlot)  // qui ferma il timer
                 this.timer() // qui lo fa ripartire
 
             },
@@ -48,18 +50,16 @@ new Vue(
                     this.pictureIndex--;
                 }
 
-                clearInterval(this.intervalSlot)  // qui ferma il timer
                 this.timer() // qui lo fa ripartire
 
             },
             moveTo: function (index) {
                 this.pictureIndex = index;
-                clearInterval(this.intervalSlot)  // qui ferma il timer
                 this.timer() // qui lo fa ripartire
             },
             // deve ritornare un nome di classe diverso
             // se la index === this.pictureIndex
-            isCurrentDot: function (index) {
+            isCurrentImage: function (index) {
                 if (index === this.pictureIndex) {
                     return 'current';
                 } else {

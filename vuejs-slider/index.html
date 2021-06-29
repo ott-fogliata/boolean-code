@@ -22,11 +22,18 @@
                     <i class="fas fa-arrow-circle-left"></i>
                 </div>
                 <div class="slider-picture col-8">
-                    <img :src="photos[pictureIndex]" alt="picture">
+                    <!-- <img :src="photos[pictureIndex]" alt="picture"> -->
+                    <img v-for="(url, index) in photos" :src="url" :class="isCurrentImage(index)" />
+                    <!-- tutte le immagini sono di default in display none. 
+                    solo la "corrente" con classe current, ha un display block.
+                    Possiamo agire con il css per creare delle animazioni.
+                    -->
+
+
                     <div class="slider-dots">
                         <i 
                         v-for="(img, index) in photos" 
-                        :class="isCurrentDot(index)" 
+                        :class="isCurrentImage(index)" 
                         class="fas fa-circle"
                         @click="moveTo(index)"
                         >
