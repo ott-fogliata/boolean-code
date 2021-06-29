@@ -1,0 +1,23 @@
+.slider {
+    position: relative;
+}
+
+.slider-picture img {
+    width: 100%;
+}
+
+.arrow {
+    font-size: 40px;
+}
+
+.slider-dots {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: -100px; /* todo c'è una soluzione migliore? */
+    color: #fff;
+}
+
+.slider-dots .current {
+    color: blue;
+}

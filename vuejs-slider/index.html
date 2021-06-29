@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js slider</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+<body>
+    
+    <div id="app">
+
+        <div class="slider container">
+            <div class="row">
+                <div class="col-2 arrow" @click="prev">
+                    <i class="fas fa-arrow-circle-left"></i>
+                </div>
+                <div class="slider-picture col-8">
+                    <img :src="photos[pictureIndex]" alt="picture">
+                    <div class="slider-dots">
+                        <i 
+                        v-for="(img, index) in photos" 
+                        :class="isCurrentDot(index)" 
+                        class="fas fa-circle"
+                        @click="moveTo(index)"
+                        >
+                    </i>                 
+    
+                    </div>
+                </div>
+                <div class="col-2 arrow" @click="next">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
