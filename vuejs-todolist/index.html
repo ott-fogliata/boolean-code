@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js Todo List</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+    <div id="app">
+
+        <div class="container">
+
+            <div class="row justify-content-center area">
+                <div class="col-4">
+                    <img class="logo" src="img/logo.png" alt="logo boolean" />
+                </div>  
+            </div>
+
+            <div class="row justify-content-center input-area area">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-8 p-0">
+                            <input id="newTaskElement" v-model="newTask" @keyup.enter="addTask" placeholder="Inserisci il nuovo task">
+                        </div>
+                        <div class="col-4 p-0">
+                            <button @click="addTask">Aggiungi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center area">
+                <ul class="col-8 list-content">
+                    <li v-for="(todo, index) in todoList">
+                        <span>{{todo}}</span>
+                        <i class="fas fa-backspace" @click="deleteTask(index)"></i>
+                    </li>
+                </ul>
+            </div>  
+
+            <div v-for="message in contacts[0].messages">
+                {{ message.date }}
+                {{ message. }}
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
