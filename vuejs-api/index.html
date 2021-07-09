@@ -16,6 +16,17 @@
     <div id="app">
         Il numero è {{ number }}
         <button @click="getNumber()">Genera numero</button>
+
+        <div v-if="names.length === 5" v-for="name in names">{{name}}</div>
+
+        <br/>
+        <br/>
+
+        {{ usernameLower }}
+        <br/>
+        <br/>
+        <div v-for="name in readyNames">{{name}}</div>
+
     </div>
     
 
