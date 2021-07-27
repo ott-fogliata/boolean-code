@@ -1,0 +1,16 @@
+
+
+name: books
+
+
+Column          Type                Attributes                      Index
+
+id              BIGINT UNSIGNED     AUTO_INCREMENT, NOT NULL        PRIMARY KEY
+title           VARCHAR(255)        NOT NULL
+author          VARCHAR(255)        NOT NULL
+year            YEAR                NULL
+publisher       VARCHAR(50)         NOT NULL
+plot            TEXT                NULL
+isbn            VARCHAR(17)         NOT NULL, UNIQUE                INDEX
+n_pages         SMALLINT UNSIGNED   NOT NULL     
+language        VARCHAR(2)          NOT NULL                        

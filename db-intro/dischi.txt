@@ -1,0 +1,19 @@
+
+name: discs
+
+Column      Type
+
+id          integer
+title       string
+author      string  (potrebbe un id => int)
+year        int/date
+genere      string
+etichetta   string
+n_brani     int
+durata      int
+
+
+
+
+
+
